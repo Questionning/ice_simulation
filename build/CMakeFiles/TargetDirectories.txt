@@ -1,3 +1,0 @@
-/workspaces/ice_simulation/build/CMakeFiles/muon_iron.dir
-/workspaces/ice_simulation/build/CMakeFiles/edit_cache.dir
-/workspaces/ice_simulation/build/CMakeFiles/rebuild_cache.dir
