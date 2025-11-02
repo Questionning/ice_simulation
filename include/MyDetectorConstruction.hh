@@ -4,8 +4,8 @@
 
 class MyDetectorConstruction : public G4VUserDetectorConstruction {
 public:
-    MyDetectorConstruction() = default;
-    ~MyDetectorConstruction() override = default;
+    MyDetectorConstruction();
+    ~MyDetectorConstruction() override;
     G4VPhysicalVolume* Construct() override;
 };
 

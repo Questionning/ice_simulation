@@ -338,9 +338,4 @@ CMakeFiles/muon_iron.dir/src/MyDetectorConstruction.cc.o: \
  /opt/geant4-v11.2.1/program-files/include/Geant4/G4VPhysicalVolume.icc \
  /opt/geant4-v11.2.1/program-files/include/Geant4/G4LogicalVolume.icc \
  /opt/geant4-v11.2.1/program-files/include/Geant4/G4PVPlacement.hh \
- /opt/geant4-v11.2.1/program-files/include/Geant4/G4SystemOfUnits.hh \
- /opt/geant4-v11.2.1/program-files/include/Geant4/G4VisAttributes.hh \
- /opt/geant4-v11.2.1/program-files/include/Geant4/graphics_reps_defs.hh \
- /opt/geant4-v11.2.1/program-files/include/Geant4/G4Colour.hh \
- /opt/geant4-v11.2.1/program-files/include/Geant4/G4Color.hh \
- /opt/geant4-v11.2.1/program-files/include/Geant4/G4VisAttributes.icc
+ /opt/geant4-v11.2.1/program-files/include/Geant4/G4SystemOfUnits.hh

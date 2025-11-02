@@ -5,19 +5,37 @@
 #include "G4SystemOfUnits.hh"
 #include <fstream>
 
-static std::ofstream outfile("muon_data.csv");
+std::ofstream outfile;
 
 MySteppingAction::MySteppingAction() {
+    G4cout << "Opening muon_data.csv..." << G4endl;
+    outfile.open("muon_data.csv");
+    if (!outfile.is_open()) {
+        G4cout << "Failed to open file!" << G4endl;
+        G4Exception("MySteppingAction::MySteppingAction()", "OpenError",
+                   FatalException, "Cannot open muon_data.csv");
+    }
+    G4cout << "File opened successfully" << G4endl;
     outfile << "Event,Track,Material,StepLength(mm),Edep(MeV),PreE(MeV),PostE(MeV),"
-               "PreZ(mm),PostZ(mm),Transmission\n";
+            << "PreZ(mm),PostZ(mm),Transmission\n";
+    outfile.flush();
 }
 
 MySteppingAction::~MySteppingAction() {
-    outfile.close();
+    G4cout << "Closing file..." << G4endl;
+    if (outfile.is_open()) {
+        outfile.flush();
+        outfile.close();
+    }
 }
 
 void MySteppingAction::UserSteppingAction(const G4Step* step)
 {
+    if (!outfile.is_open()) {
+        G4cout << "File not open during stepping action!" << G4endl;
+        return;
+    }
+
     auto prePoint = step->GetPreStepPoint();
     auto postPoint = step->GetPostStepPoint();
     auto track = step->GetTrack();

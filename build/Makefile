@@ -225,6 +225,30 @@ src/MyPrimaryGeneratorAction.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/muon_iron.dir/build.make CMakeFiles/muon_iron.dir/src/MyPrimaryGeneratorAction.cc.s
 .PHONY : src/MyPrimaryGeneratorAction.cc.s
 
+src/MySteppingAction.o: src/MySteppingAction.cc.o
+.PHONY : src/MySteppingAction.o
+
+# target to build an object file
+src/MySteppingAction.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/muon_iron.dir/build.make CMakeFiles/muon_iron.dir/src/MySteppingAction.cc.o
+.PHONY : src/MySteppingAction.cc.o
+
+src/MySteppingAction.i: src/MySteppingAction.cc.i
+.PHONY : src/MySteppingAction.i
+
+# target to preprocess a source file
+src/MySteppingAction.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/muon_iron.dir/build.make CMakeFiles/muon_iron.dir/src/MySteppingAction.cc.i
+.PHONY : src/MySteppingAction.cc.i
+
+src/MySteppingAction.s: src/MySteppingAction.cc.s
+.PHONY : src/MySteppingAction.s
+
+# target to generate assembly for a file
+src/MySteppingAction.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/muon_iron.dir/build.make CMakeFiles/muon_iron.dir/src/MySteppingAction.cc.s
+.PHONY : src/MySteppingAction.cc.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -246,6 +270,9 @@ help:
 	@echo "... src/MyPrimaryGeneratorAction.o"
 	@echo "... src/MyPrimaryGeneratorAction.i"
 	@echo "... src/MyPrimaryGeneratorAction.s"
+	@echo "... src/MySteppingAction.o"
+	@echo "... src/MySteppingAction.i"
+	@echo "... src/MySteppingAction.s"
 .PHONY : help
 
 

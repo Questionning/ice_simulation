@@ -264,4 +264,7 @@ CMakeFiles/muon_iron.dir/src/MyActionInitialization.cc.o: \
  /opt/geant4-v11.2.1/program-files/include/Geant4/G4Allocator.hh \
  /opt/geant4-v11.2.1/program-files/include/Geant4/G4AllocatorPool.hh \
  /opt/geant4-v11.2.1/program-files/include/Geant4/G4PrimaryParticle.hh \
- /opt/geant4-v11.2.1/program-files/include/Geant4/G4ParticleMomentum.hh
+ /opt/geant4-v11.2.1/program-files/include/Geant4/G4ParticleMomentum.hh \
+ /workspaces/ice_simulation/include/MySteppingAction.hh \
+ /opt/geant4-v11.2.1/program-files/include/Geant4/G4UserSteppingAction.hh \
+ /opt/geant4-v11.2.1/program-files/include/Geant4/globals.hh

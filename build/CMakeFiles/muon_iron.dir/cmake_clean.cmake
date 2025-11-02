@@ -7,6 +7,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/muon_iron.dir/src/MyDetectorConstruction.cc.o.d"
   "CMakeFiles/muon_iron.dir/src/MyPrimaryGeneratorAction.cc.o"
   "CMakeFiles/muon_iron.dir/src/MyPrimaryGeneratorAction.cc.o.d"
+  "CMakeFiles/muon_iron.dir/src/MySteppingAction.cc.o"
+  "CMakeFiles/muon_iron.dir/src/MySteppingAction.cc.o.d"
   "muon_iron"
   "muon_iron.pdb"
 )
