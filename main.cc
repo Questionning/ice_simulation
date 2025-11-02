@@ -37,7 +37,7 @@ int main(int argc, char** argv)
 
     // Run a few events to test
     G4UImanager* UImanager = G4UImanager::GetUIpointer();
-    UImanager->ApplyCommand("/run/beamOn 10");
+    UImanager->ApplyCommand("/run/beamOn 10000");
 
     delete runManager;
     return 0;
